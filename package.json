@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Node.js 테스트 프레임워크 Mocha",
   "main": "index.js",
-  "dependencies": {},
+  "type": "module",
+  "dependencies": {
+    "redis": "^3.0.2"
+  },
   "devDependencies": {
     "mocha": "^8.2.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha index.js"
   },
   "repository": {
     "type": "git",
