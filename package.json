@@ -1,0 +1,23 @@
+{
+  "name": "mocha",
+  "version": "1.0.0",
+  "description": "Node.js 테스트 프레임워크 Mocha",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeungHunBaek/Mocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeungHunBaek/Mocha/issues"
+  },
+  "homepage": "https://github.com/SeungHunBaek/Mocha#readme"
+}
