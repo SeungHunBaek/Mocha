@@ -15,7 +15,7 @@ client.on("ready", () => {
 });
 
 const instance = class {
-    set(slackId, token, expireTime){
+    async set(slackId, token, expireTime){
         try {
             client.set(slackId, token);
             if(expireTime) {
@@ -41,7 +41,7 @@ const instance = class {
         });
     };
     
-    expire(slackId, expireTime) {
+    async expire(slackId, expireTime) {
         try {
             client.expire(slackId, expireTime);
         } catch (error) {
@@ -49,7 +49,7 @@ const instance = class {
         }
     }
 
-    exists(slackId){
+    async exists(slackId){
         return new Promise((resolve, reject) => {
             client.exists(slackId, (err, result) => {
                 if(err){
@@ -61,7 +61,7 @@ const instance = class {
         });
     };
 
-    delete(key) {
+    async delete(key) {
         try {
             client.del(key);
         } catch (error) {
@@ -69,7 +69,7 @@ const instance = class {
         }
     }
 
-    rename(originKey, rename) {
+    async rename(originKey, rename) {
         client.rename(originKey, rename);
     }
 
